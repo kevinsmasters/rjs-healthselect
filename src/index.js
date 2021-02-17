@@ -6,7 +6,18 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <header className="p-1"></header>
+    <div className="container-fluid">
+        <div className="row">
+            <div className="col-md-3 col-lg-2 d-md-block sidebar collapse">
+            </div>
+            <div className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div className="pt-3 pb-2 mb-3 border-bottom">
+                    <App />
+                </div>
+            </div>
+        </div>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
