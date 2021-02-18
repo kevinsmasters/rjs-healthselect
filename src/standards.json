@@ -1,0 +1,168 @@
+{
+    "type" : "array",
+    "items" : [
+        {
+            "agent" : "alteredschaedler",
+            "name" : "Altered Schaedler Flora",
+            "standards" : [
+              "<div class='hstand'>Germ Free<sup>*</sup> <span>(GF)</span></div>",
+              "<em>* This is a <a href='/quality/animal-health/health-standards/a-brief-overview-of-taconic-health-standards/#gnotobiotic'>gnotobiotic isolator standard</a> which applies to limited quantities of special purpose animals.</em>"
+            ]
+        },
+        {
+            "agent" : "dimorphicyeast",
+            "name" : " Dimorphic Yeast",
+            "standards" : [
+              "<div class='hstand'>Germ Free<sup>*</sup> <span>(GF)</span></div>",
+              "<em>* This is a <a href='/quality/animal-health/health-standards/a-brief-overview-of-taconic-health-standards/#gnotobiotic'>gnotobiotic isolator standard</a> which applies to limited quantities of special purpose animals.</em>"
+            ]
+        },
+        {
+            "agent" : "mold",
+            "name" : "Mold",
+            "standards" : [
+              "<div class='hstand'>Germ Free<sup>*</sup> <span>(GF)</span></div>",
+              "<em>* This is a <a href='/quality/animal-health/health-standards/a-brief-overview-of-taconic-health-standards/#gnotobiotic'>gnotobiotic isolator standard</a> which applies to limited quantities of special purpose animals.</em>"
+            ]
+        },
+        {
+            "agent" : "aerobicspore",
+            "name" : "Aerobic spore forming bacteria",
+            "standards" : [
+              "<div class='hstand'>Germ Free<sup>*</sup> <span>(GF)</span></div>",
+              "<em>* This is a <a href='/quality/animal-health/health-standards/a-brief-overview-of-taconic-health-standards/#gnotobiotic'>gnotobiotic isolator standard</a> which applies to limited quantities of special purpose animals.</em>"
+            ]
+        },
+        {
+            "agent" :"anaerobicspore",
+            "name" : "Anaerobic spore forming bacteria",
+            "standards" : [
+              "<div class='hstand'>Germ Free<sup>*</sup> <span>(GF)</span></div>",
+              "<em>* This is a <a href='/quality/animal-health/health-standards/a-brief-overview-of-taconic-health-standards/#gnotobiotic'>gnotobiotic isolator standard</a> which applies to limited quantities of special purpose animals.</em>"
+            ]
+        },
+        {
+            "agent" : "nonspore",
+            "name" : "Non-spore forming rod bacteria",
+            "standards" : [
+                "<div class='hstand'>Defined Flora<sup>*</sup> <span>(DF)</span></div>",
+                "<div class='hstand'>Germ Free<sup>*</sup> <span>(GF)</span></div>",
+                "<em>* This is a <a href='/quality/animal-health/health-standards/a-brief-overview-of-taconic-health-standards/#gnotobiotic'>gnotobiotic isolator standard</a> which applies to limited quantities of special purpose animals.</em>"
+              ]
+        },
+        {
+            "agent" : "coccibacteria",
+            "name" : " Cocci bacteria",
+            "standards" : [
+              "<div class='hstand'>Defined Flora<sup>*</sup> <span>(DF)</span></div>",
+              "<div class='hstand'>Germ Free<sup>*</sup> <span>(GF)</span></div>",
+              "<em>* This is a <a href='/quality/animal-health/health-standards/a-brief-overview-of-taconic-health-standards/#gnotobiotic'>gnotobiotic isolator standard</a> which applies to limited quantities of special purpose animals.</em>"
+            ]
+        },
+        {
+            "agent" : "betahemolytic",
+            "name" : "Beta hemolytic Streptococcus (non Group D)",
+            "standards" : [
+                "<div class='hstand'>Restricted Flora&trade; <span>(RF&trade;)</span></div>",
+                "<div class='hstand'>Opportunist Free&trade; <span>(OF&trade;)</span></div>",
+                "<div class='hstand'>Excluded Flora <span>(EF)</span></div>",
+                "<div class='hstand'>Defined Flora<sup>*</sup> <span>(DF)</span></div>",
+                "<div class='hstand'>Germ Free<sup>*</sup> <span>(GF)</span></div>",
+                "<em>* This is a <a href='/quality/animal-health/health-standards/a-brief-overview-of-taconic-health-standards/#gnotobiotic'>gnotobiotic isolator standard</a> which applies to limited quantities of special purpose animals.</em>"
+              ]
+        },
+        {
+            "agent" : "corynebacterium",
+            "name" : "Corynebacterium bovis",
+            "standards" : [
+                "<div class='hstand'>Restricted Flora&trade; <span>(RF&trade;)</span></div>",
+                "<div class='hstand'>Opportunist Free&trade; <span>(OF&trade;)</span></div>",
+                "<div class='hstand'>Excluded Flora <span>(EF)</span></div>",
+                "<div class='hstand'>Defined Flora<sup>*</sup> <span>(DF)</span></div>",
+                "<div class='hstand'>Germ Free<sup>*</sup> <span>(GF)</span></div>",
+                "<em>* This is a <a href='/quality/animal-health/health-standards/a-brief-overview-of-taconic-health-standards/#gnotobiotic'>gnotobiotic isolator standard</a> which applies to limited quantities of special purpose animals.</em>"
+              ]
+        },
+        {
+            "agent" : "klebsiellaoxytoca",
+            "name" : "Klebsiella oxytoca",
+            "standards" : [
+                "<div class='hstand'>Restricted Flora&trade; <span>(RF&trade;)</span></div>",
+                "<div class='hstand'>Opportunist Free&trade; <span>(OF&trade;)</span></div>",
+                "<div class='hstand'>Excluded Flora <span>(EF)</span></div>",
+                "<div class='hstand'>Defined Flora<sup>*</sup> <span>(DF)</span></div>",
+                "<div class='hstand'>Germ Free<sup>*</sup> <span>(GF)</span></div>",
+                "<em>* This is a <a href='/quality/animal-health/health-standards/a-brief-overview-of-taconic-health-standards/#gnotobiotic'>gnotobiotic isolator standard</a> which applies to limited quantities of special purpose animals.</em>"
+              ]
+        },
+        {
+            "agent" : "klebsiellapneumoniae",
+            "name" : "Klebsiella pneumoniae",
+            "standards" : [
+                "<div class='hstand'>Restricted Flora&trade; <span>(RF&trade;)</span></div>",
+                "<div class='hstand'>Opportunist Free&trade; <span>(OF&trade;)</span></div>",
+                "<div class='hstand'>Excluded Flora <span>(EF)</span></div>",
+                "<div class='hstand'>Defined Flora<sup>*</sup> <span>(DF)</span></div>",
+                "<div class='hstand'>Germ Free<sup>*</sup> <span>(GF)</span></div>",
+                "<em>* This is a <a href='/quality/animal-health/health-standards/a-brief-overview-of-taconic-health-standards/#gnotobiotic'>gnotobiotic isolator standard</a> which applies to limited quantities of special purpose animals.</em>"
+              ]
+        },
+        {
+            "agent" : "pasteurellamultocida",
+            "name" : "Pasteurella multocida",
+            "standards" : [
+                "<div class='hstand'>Restricted Flora&trade; <span>(RF&trade;)</span></div>",
+                "<div class='hstand'>Opportunist Free&trade; <span>(OF&trade;)</span></div>",
+                "<div class='hstand'>Excluded Flora <span>(EF)</span></div>",
+                "<div class='hstand'>Defined Flora<sup>*</sup> <span>(DF)</span></div>",
+                "<div class='hstand'>Germ Free<sup>*</sup> <span>(GF)</span></div>",
+                "<em>* This is a <a href='/quality/animal-health/health-standards/a-brief-overview-of-taconic-health-standards/#gnotobiotic'>gnotobiotic isolator standard</a> which applies to limited quantities of special purpose animals.</em>"
+              ]
+        },
+        {
+            "agent" : "proteusspp",
+            "name" : "Proteus spp.",
+            "standards" : [
+                "<div class='hstand'>Opportunist Free&trade; <span>(OF&trade;)</span></div>",
+                "<div class='hstand'>Excluded Flora <span>(EF)</span></div>",
+                "<div class='hstand'>Defined Flora<sup>*</sup> <span>(DF)</span></div>",
+                "<div class='hstand'>Germ Free<sup>*</sup> <span>(GF)</span></div>",
+                "<em>* This is a <a href='/quality/animal-health/health-standards/a-brief-overview-of-taconic-health-standards/#gnotobiotic'>gnotobiotic isolator standard</a> which applies to limited quantities of special purpose animals.</em>"
+              ]
+        },
+        {
+            "agent" : "pseudomonas",
+            "name" : "Pseudomonas aeruginosa",
+            "standards" : [
+                "<div class='hstand'>Restricted Flora&trade; <span>(RF&trade;)</span></div>",
+                "<div class='hstand'>Opportunist Free&trade; <span>(OF&trade;)</span></div>",
+                "<div class='hstand'>Excluded Flora <span>(EF)</span></div>",
+                "<div class='hstand'>Defined Flora<sup>*</sup> <span>(DF)</span></div>",
+                "<div class='hstand'>Germ Free<sup>*</sup> <span>(GF)</span></div>",
+                "<em>* This is a <a href='/quality/animal-health/health-standards/a-brief-overview-of-taconic-health-standards/#gnotobiotic'>gnotobiotic isolator standard</a> which applies to limited quantities of special purpose animals.</em>"
+              ]
+        },
+        {
+            "agent" : "staphylococcus",
+            "name" : "Staphylococcus aureus",
+            "standards" : [
+                "<div class='hstand'>Restricted Flora&trade; <span>(RF&trade;)</span></div>",
+                "<div class='hstand'>Opportunist Free&trade; <span>(OF&trade;)</span></div>",
+                "<div class='hstand'>Excluded Flora <span>(EF)</span></div>",
+                "<div class='hstand'>Defined Flora<sup>*</sup> <span>(DF)</span></div>",
+                "<div class='hstand'>Germ Free<sup>*</sup> <span>(GF)</span></div>",
+                "<em>* This is a <a href='/quality/animal-health/health-standards/a-brief-overview-of-taconic-health-standards/#gnotobiotic'>gnotobiotic isolator standard</a> which applies to limited quantities of special purpose animals.</em>"
+              ]
+        },
+        {
+            "agent" : "segmentedfilamentous",
+            "name" : "Segmented Filamentous Bacteria (SFB)",
+            "standards" : [
+                "<div class='hstand'>Excluded Flora <span>(EF)</span></div>",
+                "<div class='hstand'>Defined Flora<sup>*</sup> <span>(DF)</span></div>",
+                "<div class='hstand'>Germ Free<sup>*</sup> <span>(GF)</span></div>",
+                "<em>* This is a <a href='/quality/animal-health/health-standards/a-brief-overview-of-taconic-health-standards/#gnotobiotic'>gnotobiotic isolator standard</a> which applies to limited quantities of special purpose animals.</em>"
+              ]
+        }
+    ]
+}
