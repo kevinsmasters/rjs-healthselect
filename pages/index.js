@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import Accordions from '../components/Accordions'
+import SelectAgent from '../components/SelectAgent'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default function Home() {
+export default function Home({standards}) {
   return (
     <>
       <Head>
@@ -20,13 +22,25 @@ export default function Home() {
                         <p>The below lists of core rodent pathogens are excluded
                         from ALL Taconic Biosciences health standards:</p>
                         <Accordions />
+                        <SelectAgent standards={standards} />
+
                       </div>
                   </div>
               </div>
           </div>
       </main>
-
-
     </>
   )
+}
+
+export const getStaticProps = async () => {
+    const res = await fetch(`http://localhost/ref-standards.json`)
+
+    const standards = await res.json()
+
+    return {
+        props: {
+            standards
+        }
+    }
 }
