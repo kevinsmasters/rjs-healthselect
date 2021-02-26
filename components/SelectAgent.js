@@ -2,7 +2,30 @@ import StandardList from '../components/StandardList'
 import Button from 'react-bootstrap/Button'
 import AgentStyles from '../styles/SelectAgent.module.css'
 
+import React, { useState } from 'react';
+
 const SelectAgent = ({standards}) => {
+    const selectedAgents = [];
+    const [agent, setAgent] = useState(false);
+
+    // const checkCheck = () => {
+    //     e.target.checked ? setAgent(standard.agent) : setAgent(false);
+    // }
+
+    const checkCheck =(e, agent)=>{
+        if(e) {
+            selectedAgents.push(agent)
+        } else {
+            let index = selectedAgents.indexOf(agent);
+            if (index > -1) {
+                selectedAgents.splice(index, 1);
+            }
+        }
+
+        console.log(e, agent);
+        console.log(selectedAgents)
+    }
+
     return (
         <>
             <h2>Select Additional Agents</h2>
@@ -11,7 +34,7 @@ const SelectAgent = ({standards}) => {
                 <div className="row">
                     <div className="col-md-6">
                         <h3>Bacteria, mycoplasma, fungi</h3>
-                        <StandardList standards={standards.bacmycofungi} />
+                        <StandardList standards={standards.bacmycofungi} onChange={checkCheck} />
                         <div className="form-check">
                             <label className="form-check-label">
                                 <input className="form-check-input" type="checkbox" id="allbac" />
