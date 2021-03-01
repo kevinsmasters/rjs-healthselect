@@ -1,20 +1,22 @@
 import StandardList from '../components/StandardList'
 import Button from 'react-bootstrap/Button'
+import ResultModal from '../components/ResultModal'
+
 import AgentStyles from '../styles/SelectAgent.module.css'
 
 import React, { useState } from 'react';
 
 const SelectAgent = ({standards}) => {
     const selectedAgents = [];
+    const microfungi = standards.bacmycofungi;
+    const microflora = standards.microflora;
     const [agent, setAgent] = useState(false);
-
-    // const checkCheck = () => {
-    //     e.target.checked ? setAgent(standard.agent) : setAgent(false);
-    // }
 
     const checkCheck =(e, agent)=>{
         if(e) {
             selectedAgents.push(agent)
+            const result = microfungi.find( ({ agent }) => agent === agent)
+            console.log(result);
         } else {
             let index = selectedAgents.indexOf(agent);
             if (index > -1) {
@@ -22,7 +24,7 @@ const SelectAgent = ({standards}) => {
             }
         }
 
-        console.log(e, agent);
+        //console.log(e, agent);
         console.log(selectedAgents)
     }
 
@@ -48,7 +50,7 @@ const SelectAgent = ({standards}) => {
                         section applies only to gnotobiotic health standards;
                         limited quantities of special purpose animals are produced
                         at these standards.</em></p>
-                        <StandardList standards={standards.microflora} />
+                        <StandardList standards={standards.microflora} onChange={checkCheck} />
                         <div className="form-check">
                             <label className="form-check-label">
                                 <input className="form-check-input" type="checkbox" id="allmf" />
@@ -70,12 +72,13 @@ const SelectAgent = ({standards}) => {
                                 <input className="typeahead text-input" name="agent"
                                 type="text" placeholder="agent" id="agentTxt"/>
                             </div>
-                            <Button variant="primary">Submit</Button>
+                            <ResultModal selectedAgents = {selectedAgents} />
                             <Button variant="primary">Reset</Button>
                         </div>
                     </div>
                 </div>
             </form>
+
         </>
     )
 }

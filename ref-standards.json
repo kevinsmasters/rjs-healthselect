@@ -1,6 +1,6 @@
 {
     "type" : "array",
-    "bac-myco-fungi" : [
+    "bacmycofungi" : [
         {
             "agent" : "betahemolytic",
             "name" : "Beta hemolytic Streptococcus (non Group D)",
