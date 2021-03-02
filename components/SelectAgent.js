@@ -12,13 +12,22 @@ const SelectAgent = ({standards}) => {
     const microflora = standards.microflora;
     const [agent, setAgent] = useState(false);
 
-    const checkCheck =(e, agent)=>{
+    const checkCheck =(e, thisagent)=>{
         if(e) {
-            selectedAgents.push(agent)
-            const result = microfungi.find( ({ agent }) => agent === agent)
+            //selectedAgents.push(thisagent)
+            const result = microfungi.find( ({ agent }) => agent === thisagent)
+            if(result) {
+                selectedAgents.push(result);
+            } else {
+                const result = microflora.find( ({ agent }) => agent === thisagent);
+                if(result) {
+                    selectedAgents.push(result);
+                }
+            }
             console.log(result);
         } else {
-            let index = selectedAgents.indexOf(agent);
+            // selectedAgents = selectedAgents.filter(function(el) { return el.agent != thisagent })
+            let index = selectedAgents.findIndex(({ agent }) => agent === thisagent);
             if (index > -1) {
                 selectedAgents.splice(index, 1);
             }
