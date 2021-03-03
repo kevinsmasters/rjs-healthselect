@@ -1,11 +1,13 @@
 const Standard = ({standard, onChange}) => {
 
+    let standClass = "form-check-input standard-select " + standard.type;
+
     return(
         <div className="form-check">
             <label htmlFor={standard.agent} className="form-check-label">
                 <input
                 id={standard.agent}
-                className="form-check-input standard-select"
+                className={standClass}
                 type="checkbox"
                 onChange={(e)=>onChange(e.target.checked, standard.agent)}
                 />

@@ -37,6 +37,11 @@ const SelectAgent = ({standards}) => {
         console.log(selectedAgents)
     }
 
+    const checkAll =(e, type)=>{
+        console.log('check all these: '+type)
+        
+    }
+
     return (
         <>
             <h2>Select Additional Agents</h2>
@@ -48,7 +53,12 @@ const SelectAgent = ({standards}) => {
                         <StandardList standards={standards.bacmycofungi} onChange={checkCheck} />
                         <div className="form-check">
                             <label className="form-check-label">
-                                <input className="form-check-input" type="checkbox" id="allbac" />
+                                <input
+                                className="form-check-input"
+                                type="checkbox"
+                                id="allbac"
+                                onChange={(e)=> checkAll(e.target.checked, "bmf")}
+                                />
                                 Select all
                             </label>
                         </div>
@@ -62,7 +72,12 @@ const SelectAgent = ({standards}) => {
                         <StandardList standards={standards.microflora} onChange={checkCheck} />
                         <div className="form-check">
                             <label className="form-check-label">
-                                <input className="form-check-input" type="checkbox" id="allmf" />
+                                <input
+                                className="form-check-input"
+                                type="checkbox"
+                                id="allmf"
+                                onChange={(e)=> checkAll(e.target.checked, "cm")}
+                                 />
                                 Select all
                             </label>
                         </div>
@@ -71,9 +86,9 @@ const SelectAgent = ({standards}) => {
                 <div className="row">
                     <div className="col-md-12">
                         <div className="form-check">
-                            <label htmlFor="allmf" className="form-check-label">
-                                <input className="form-check-input" id="allmf" type="checkbox"/>
-                                Select all
+                            <label htmlFor="nota" className="form-check-label">
+                                <input className="form-check-input" id="nota" type="checkbox"/>
+                                I do not exclude any agents beyond the core list.
                             </label>
                             <div id="agentSearch">
                                 <label htmlFor="agent">Can't find your agent? Try searching here.</label>
