@@ -12,6 +12,8 @@ const SelectAgent = ({standards}) => {
     const microflora = standards.microflora;
     const [agent, setAgent] = useState(false);
 
+    const [selected, setSelected] = useState(false);
+
     const checkCheck =(e, thisagent)=>{
         if(e) {
             //selectedAgents.push(thisagent)
@@ -39,7 +41,8 @@ const SelectAgent = ({standards}) => {
 
     const checkAll =(e, type)=>{
         console.log('check all these: '+type)
-        
+        console.log()
+        setSelected(selected!=true ? true : false);
     }
 
     return (
@@ -50,7 +53,11 @@ const SelectAgent = ({standards}) => {
                 <div className="row">
                     <div className="col-md-6">
                         <h3>Bacteria, mycoplasma, fungi</h3>
-                        <StandardList standards={standards.bacmycofungi} onChange={checkCheck} />
+                        <StandardList
+                        standards={standards.bacmycofungi}
+                        onChange={checkCheck}
+                        selected={selected}
+                        />
                         <div className="form-check">
                             <label className="form-check-label">
                                 <input
@@ -69,7 +76,11 @@ const SelectAgent = ({standards}) => {
                         section applies only to gnotobiotic health standards;
                         limited quantities of special purpose animals are produced
                         at these standards.</em></p>
-                        <StandardList standards={standards.microflora} onChange={checkCheck} />
+                        <StandardList
+                        standards={standards.microflora}
+                        onChange={checkCheck}
+                        selected={selected}
+                         />
                         <div className="form-check">
                             <label className="form-check-label">
                                 <input

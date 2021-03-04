@@ -1,4 +1,4 @@
-const Standard = ({standard, onChange}) => {
+const Standard = ({standard, onChange, selected}) => {
 
     let standClass = "form-check-input standard-select " + standard.type;
 
@@ -9,6 +9,7 @@ const Standard = ({standard, onChange}) => {
                 id={standard.agent}
                 className={standClass}
                 type="checkbox"
+                checked={selected}
                 onChange={(e)=>onChange(e.target.checked, standard.agent)}
                 />
                 <span>{standard.name}</span>
