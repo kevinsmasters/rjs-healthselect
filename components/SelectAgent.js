@@ -12,8 +12,6 @@ const SelectAgent = ({standards}) => {
     const microflora = standards.microflora;
     const [agent, setAgent] = useState(false);
 
-    const [selected, setSelected] = useState(false);
-
     const checkCheck =(e, thisagent)=>{
         if(e) {
             //selectedAgents.push(thisagent)
@@ -39,12 +37,6 @@ const SelectAgent = ({standards}) => {
         console.log(selectedAgents)
     }
 
-    const checkAll =(e, type)=>{
-        console.log('check all these: '+type)
-        console.log()
-        setSelected(selected!=true ? true : false);
-    }
-
     return (
         <>
             <h2>Select Additional Agents</h2>
@@ -56,7 +48,6 @@ const SelectAgent = ({standards}) => {
                         <StandardList
                         standards={standards.bacmycofungi}
                         onChange={checkCheck}
-                        selected={selected}
                         />
                         <div className="form-check">
                             <label className="form-check-label">
@@ -79,7 +70,6 @@ const SelectAgent = ({standards}) => {
                         <StandardList
                         standards={standards.microflora}
                         onChange={checkCheck}
-                        selected={selected}
                          />
                         <div className="form-check">
                             <label className="form-check-label">

@@ -1,6 +1,6 @@
 import Standard from './Standard'
 
-const StandardList = ({standards, onChange, selected}) => {
+const StandardList = ({standards, onChange}) => {
     return (
         <>
             {standards.map(standard => (
@@ -8,8 +8,7 @@ const StandardList = ({standards, onChange, selected}) => {
                     standard={standard}
                     key={standard.agent}
                     onChange={onChange}
-                    selected={selected}
-                     />
+                    />
                 )
             )}
         </>
