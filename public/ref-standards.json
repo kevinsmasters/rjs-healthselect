@@ -1,0 +1,103 @@
+{
+    "type" : "array",
+    "bacmycofungi" : [
+        {
+            "agent" : "betahemolytic",
+            "name" : "Beta hemolytic Streptococcus (non Group D)",
+            "standards" : ["RF","OF","EF","DF","GF"],
+            "type" : "bmf"
+        },
+        {
+            "agent" : "corynebacterium",
+            "name" : "Corynebacterium bovis",
+            "standards" : ["RF","OF","EF","DF","GF"],
+            "type" : "bmf"
+        },
+        {
+            "agent" : "klebsiellaoxytoca",
+            "name" : "Klebsiella oxytoca",
+            "standards" : ["RF","OF","EF","DF","GF"],
+            "type" : "bmf"
+        },
+        {
+            "agent" : "klebsiellapneumoniae",
+            "name" : "Klebsiella pneumoniae",
+            "standards" : ["RF","OF","EF","DF","GF"],
+            "type" : "bmf"
+        },
+        {
+            "agent" : "pasteurellamultocida",
+            "name" : "Pasteurella multocida",
+            "standards" : ["RF","OF","EF","DF","GF"],
+            "type" : "bmf"
+        },
+        {
+            "agent" : "proteusspp",
+            "name" : "Proteus spp.",
+            "standards" : ["OF","EF","DF","GF"],
+            "type" : "bmf"
+        },
+        {
+            "agent" : "pseudomonas",
+            "name" : "Pseudomonas aeruginosa",
+            "standards" : ["RF","OF","EF","DF","GF"],
+            "type" : "bmf"
+        },
+        {
+            "agent" : "staphylococcus",
+            "name" : "Staphylococcus aureus",
+            "standards" : ["RF","OF","EF","DF","GF"],
+            "type" : "bmf"
+        },
+        {
+            "agent" : "segmentedfilamentous",
+            "name" : "Segmented Filamentous Bacteria (SFB)",
+            "standards" : ["EF","DF","GF"],
+            "type" : "bmf"
+        }
+    ],
+    "microflora" : [
+        {
+            "agent" : "alteredschaedler",
+            "name" : "Altered Schaedler Flora",
+            "standards" : ["GF"],
+            "type" : "cm"
+        },
+        {
+            "agent" : "dimorphicyeast",
+            "name" : " Dimorphic Yeast",
+            "standards" : ["GF"],
+            "type" : "cm"
+        },
+        {
+            "agent" : "mold",
+            "name" : "Mold",
+            "standards" : ["GF"],
+            "type" : "cm"
+        },
+        {
+            "agent" : "aerobicspore",
+            "name" : "Aerobic spore forming bacteria",
+            "standards" : ["GF"],
+            "type" : "cm"
+        },
+        {
+            "agent" :"anaerobicspore",
+            "name" : "Anaerobic spore forming bacteria",
+            "standards" : ["GF"],
+            "type" : "cm"
+        },
+        {
+            "agent" : "nonspore",
+            "name" : "Non-spore forming rod bacteria",
+            "standards" : ["DF","GF"],
+            "type" : "cm"
+        },
+        {
+            "agent" : "coccibacteria",
+            "name" : " Cocci bacteria",
+            "standards" : ["DF","GF"],
+            "type" : "cm"
+        }
+    ]
+}
