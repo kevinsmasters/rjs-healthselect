@@ -10,7 +10,9 @@ const SelectAgent = ({ standards }) => {
   const selectedAgents = [];
   const microfungi = standards.bacmycofungi;
   const microflora = standards.microflora;
-  const [agent, setAgent] = useState(false);
+  const [agent, setAgent] = useState(false); // <- needs to be appropriated
+
+  const [show, setShow] = useState(false);
 
   const checkCheck = (e, thisagent) => {
     if (e) {
@@ -35,6 +37,10 @@ const SelectAgent = ({ standards }) => {
 
     //console.log(e, agent);
     console.log(selectedAgents);
+  };
+
+  const handleShow = () => {
+    console.log("show");
   };
 
   return (
@@ -107,10 +113,14 @@ const SelectAgent = ({ standards }) => {
                   id="agentTxt"
                 />
               </div>
-              <Button variant="primary" onClick={handleShow}>
+              <Button variant="primary" onClick={() => setShow(true)}>
                 Submit
               </Button>
-              <ResultModal selectedAgents={selectedAgents} />
+              <ResultModal
+                selectedAgents={selectedAgents}
+                show={show}
+                setShow={setShow}
+              />
               <Button variant="secondary">Reset</Button>
             </div>
           </div>
