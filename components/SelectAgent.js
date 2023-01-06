@@ -9,7 +9,6 @@ import React, { useState } from "react";
 const SelectAgent = ({ standards }) => {
   const [agents, setAgents] = useState([]);
 
-  console.log("picked agents: ", agents);
   const selectedAgents = [];
   const microfungi = standards.bacmycofungi;
   const microflora = standards.microflora;
@@ -34,6 +33,8 @@ const SelectAgent = ({ standards }) => {
       }
       console.log(result);
     } else {
+      console.log("this agent: ", thisagent);
+      setAgents(agents.filter((agent) => agent.agent != thisagent));
       // selectedAgents = selectedAgents.filter(function(el) { return el.agent != thisagent })
       let index = selectedAgents.findIndex(({ agent }) => agent === thisagent);
       if (index > -1) {
