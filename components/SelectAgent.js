@@ -9,41 +9,25 @@ import React, { useState } from "react";
 const SelectAgent = ({ standards }) => {
   const [agents, setAgents] = useState([]);
 
-  const selectedAgents = [];
   const microfungi = standards.bacmycofungi;
   const microflora = standards.microflora;
-  const [agent, setAgent] = useState(false); // <- needs to be appropriated
 
   const [show, setShow] = useState(false);
 
   const checkCheck = (e, thisagent) => {
     if (e) {
-      //selectedAgents.push(thisagent)
       const result = microfungi.find(({ agent }) => agent === thisagent);
       if (result) {
-        console.log("result: ", result);
-        selectedAgents.push(result);
         setAgents(agents.concat(result));
       } else {
         const result = microflora.find(({ agent }) => agent === thisagent);
         if (result) {
-          selectedAgents.push(result);
           setAgents(agents.concat(result));
         }
       }
-      console.log(result);
     } else {
-      console.log("this agent: ", thisagent);
       setAgents(agents.filter((agent) => agent.agent != thisagent));
-      // selectedAgents = selectedAgents.filter(function(el) { return el.agent != thisagent })
-      let index = selectedAgents.findIndex(({ agent }) => agent === thisagent);
-      if (index > -1) {
-        selectedAgents.splice(index, 1);
-      }
     }
-
-    //console.log(e, agent);
-    console.log(selectedAgents);
   };
 
   const handleShow = () => {
@@ -128,7 +112,9 @@ const SelectAgent = ({ standards }) => {
                 show={show}
                 setShow={setShow}
               />
-              <Button variant="secondary">Reset</Button>
+              <Button variant="secondary" onClick={() => setAgents([])}>
+                Reset
+              </Button>
             </div>
           </div>
         </div>
