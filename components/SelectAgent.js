@@ -7,6 +7,9 @@ import AgentStyles from "../styles/SelectAgent.module.css";
 import React, { useState } from "react";
 
 const SelectAgent = ({ standards }) => {
+  const [agents, setAgents] = useState([]);
+
+  console.log("picked agents: ", agents);
   const selectedAgents = [];
   const microfungi = standards.bacmycofungi;
   const microflora = standards.microflora;
@@ -19,11 +22,14 @@ const SelectAgent = ({ standards }) => {
       //selectedAgents.push(thisagent)
       const result = microfungi.find(({ agent }) => agent === thisagent);
       if (result) {
+        console.log("result: ", result);
         selectedAgents.push(result);
+        setAgents(agents.concat(result));
       } else {
         const result = microflora.find(({ agent }) => agent === thisagent);
         if (result) {
           selectedAgents.push(result);
+          setAgents(agents.concat(result));
         }
       }
       console.log(result);
@@ -117,7 +123,7 @@ const SelectAgent = ({ standards }) => {
                 Submit
               </Button>
               <ResultModal
-                selectedAgents={selectedAgents}
+                selectedAgents={agents}
                 show={show}
                 setShow={setShow}
               />
