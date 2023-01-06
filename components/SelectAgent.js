@@ -7,21 +7,29 @@ import AgentStyles from "../styles/SelectAgent.module.css";
 import React, { useState } from "react";
 
 const SelectAgent = ({ standards }) => {
+  const [agents, setAgents] = useState([]);
+
+  console.log("picked agents: ", agents);
   const selectedAgents = [];
   const microfungi = standards.bacmycofungi;
   const microflora = standards.microflora;
-  const [agent, setAgent] = useState(false);
+  const [agent, setAgent] = useState(false); // <- needs to be appropriated
+
+  const [show, setShow] = useState(false);
 
   const checkCheck = (e, thisagent) => {
     if (e) {
       //selectedAgents.push(thisagent)
       const result = microfungi.find(({ agent }) => agent === thisagent);
       if (result) {
+        console.log("result: ", result);
         selectedAgents.push(result);
+        setAgents(agents.concat(result));
       } else {
         const result = microflora.find(({ agent }) => agent === thisagent);
         if (result) {
           selectedAgents.push(result);
+          setAgents(agents.concat(result));
         }
       }
       console.log(result);
@@ -35,6 +43,10 @@ const SelectAgent = ({ standards }) => {
 
     //console.log(e, agent);
     console.log(selectedAgents);
+  };
+
+  const handleShow = () => {
+    console.log("show");
   };
 
   return (
@@ -107,10 +119,14 @@ const SelectAgent = ({ standards }) => {
                   id="agentTxt"
                 />
               </div>
-              <Button variant="primary" onClick={handleShow}>
+              <Button variant="primary" onClick={() => setShow(true)}>
                 Submit
               </Button>
-              <ResultModal selectedAgents={selectedAgents} />
+              <ResultModal
+                selectedAgents={agents}
+                show={show}
+                setShow={setShow}
+              />
               <Button variant="secondary">Reset</Button>
             </div>
           </div>

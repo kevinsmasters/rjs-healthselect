@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-const ResultModal = ({ selectedAgents }) => {
-  const [show, setShow] = useState(false);
+const ResultModal = ({ selectedAgents, show, setShow }) => {
+  // const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
