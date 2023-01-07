@@ -44,7 +44,8 @@ const SelectAgent = ({ standards }) => {
             <h3>Bacteria, mycoplasma, fungi</h3>
             <StandardList
               standards={standards.bacmycofungi}
-              onChange={checkCheck}
+              checkCheck={checkCheck}
+              agents={agents}
             />
             <div className="form-check">
               <label className="form-check-label">
@@ -69,7 +70,8 @@ const SelectAgent = ({ standards }) => {
             </p>
             <StandardList
               standards={standards.microflora}
-              onChange={checkCheck}
+              checkCheck={checkCheck}
+              agents={agents}
             />
             <div className="form-check">
               <label className="form-check-label">
