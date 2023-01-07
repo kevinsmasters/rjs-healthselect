@@ -30,6 +30,13 @@ const SelectAgent = ({ standards }) => {
     }
   };
 
+  const checkAll = (checked, type) => {
+    if (checked) {
+      setAgents(agents.concat(type));
+    }
+  };
+
+  console.log("agents: ", agents);
   const handleShow = () => {
     console.log("show");
   };
@@ -53,7 +60,7 @@ const SelectAgent = ({ standards }) => {
                   className="form-check-input"
                   type="checkbox"
                   id="allbac"
-                  onChange={(e) => checkAll(e.target.checked, "bmf")}
+                  onChange={(e) => checkAll(e.target.checked, microfungi)}
                 />
                 Select all
               </label>
@@ -79,7 +86,7 @@ const SelectAgent = ({ standards }) => {
                   className="form-check-input"
                   type="checkbox"
                   id="allmf"
-                  onChange={(e) => checkAll(e.target.checked, "cm")}
+                  onChange={(e) => checkAll(e.target.checked, microflora)}
                 />
                 Select all
               </label>
