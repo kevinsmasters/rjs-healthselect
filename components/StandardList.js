@@ -1,18 +1,18 @@
-import Standard from './Standard'
+import Standard from "./Standard";
 
-const StandardList = ({standards, onChange}) => {
-    return (
-        <>
-            {standards.map(standard => (
-                    <Standard
-                    standard={standard}
-                    key={standard.agent}
-                    onChange={onChange}
-                    />
-                )
-            )}
-        </>
-    )
-}
+const StandardList = ({ standards, checkCheck, agents }) => {
+  return (
+    <>
+      {standards.map((standard) => (
+        <Standard
+          standard={standard}
+          key={standard.agent}
+          checkCheck={checkCheck}
+          agents={agents}
+        />
+      ))}
+    </>
+  );
+};
 
-export default StandardList
+export default StandardList;

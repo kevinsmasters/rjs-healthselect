@@ -20,7 +20,7 @@ const ResultModal = ({ selectedAgents, show, setShow }) => {
     if (selectedAgents[i].standards.length == lowest)
       standKey = selectedAgents[i].standards;
   }
-  console.log(standKey);
+  //console.log(standKey);
   return (
     <>
       <Modal show={show} onHide={handleClose}>
