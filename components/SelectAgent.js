@@ -33,6 +33,9 @@ const SelectAgent = ({ standards }) => {
   const checkAll = (checked, type) => {
     if (checked) {
       setAgents(agents.concat(type));
+    } else {
+      let remains = agents.filter((agent) => !type.includes(agent));
+      setAgents([...remains]);
     }
   };
 
