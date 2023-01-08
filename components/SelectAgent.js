@@ -9,6 +9,9 @@ import React, { useState } from "react";
 const SelectAgent = ({ standards }) => {
   const [agents, setAgents] = useState([]);
 
+  const [fungiCheck, setFungicheck] = useState(false);
+  const [mycroCheck, setMycrocheck] = useState(false);
+
   const microfungi = standards.bacmycofungi;
   const microflora = standards.microflora;
 
@@ -63,7 +66,11 @@ const SelectAgent = ({ standards }) => {
                   className="form-check-input"
                   type="checkbox"
                   id="allbac"
-                  onChange={(e) => checkAll(e.target.checked, microfungi)}
+                  onChange={(e) => {
+                    checkAll(e.target.checked, microfungi);
+                    setFungicheck(!fungiCheck);
+                  }}
+                  checked={fungiCheck}
                 />
                 Select all
               </label>
@@ -89,7 +96,11 @@ const SelectAgent = ({ standards }) => {
                   className="form-check-input"
                   type="checkbox"
                   id="allmf"
-                  onChange={(e) => checkAll(e.target.checked, microflora)}
+                  onChange={(e) => {
+                    checkAll(e.target.checked, microflora);
+                    setMycrocheck(!mycroCheck);
+                  }}
+                  checked={mycroCheck}
                 />
                 Select all
               </label>
@@ -124,7 +135,14 @@ const SelectAgent = ({ standards }) => {
                 show={show}
                 setShow={setShow}
               />
-              <Button variant="secondary" onClick={() => setAgents([])}>
+              <Button
+                variant="secondary"
+                onClick={() => {
+                  setAgents([]);
+                  setMycrocheck(false);
+                  setFungicheck(false);
+                }}
+              >
                 Reset
               </Button>
             </div>
