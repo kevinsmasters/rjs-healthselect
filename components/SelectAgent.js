@@ -30,6 +30,9 @@ const SelectAgent = ({ standards }) => {
       }
     } else {
       setAgents(agents.filter((agent) => agent.agent != thisagent));
+
+      setMycrocheck(false);
+      setFungicheck(false);
     }
   };
 
