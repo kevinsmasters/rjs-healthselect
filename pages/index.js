@@ -15,12 +15,15 @@ export default function Home({ standards }) {
         <header className="p-1"></header>
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-3 col-lg-2 d-md-block sidebar collapse"></div>
-            <div className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div className="col-md-8 ms-sm-auto px-md-4 offset-md-2">
               <div className="pt-3 pb-2 mb-3 border-bottom">
+                <h1>
+                  Generic BioTechnology&reg; <br />
+                  Model Health Standard Selector
+                </h1>
                 <p>
                   The below lists of core rodent pathogens are excluded from ALL
-                  Generic BioTechnology &reg; health standards:
+                  Generic BioTechnology&reg; health standards:
                 </p>
                 <Accordions />
                 <SelectAgent standards={standards} />

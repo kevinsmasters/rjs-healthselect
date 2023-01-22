@@ -9,7 +9,7 @@ const Accordions = () => {
           <Accordion.Toggle as={Card.Header} variant="link" eventKey="0">
             Viruses{" "}
             <span>
-              (excluded at all Generic BioTechnology &reg; health standards)
+              (excluded at all Generic BioTechnology&reg; health standards)
             </span>
           </Accordion.Toggle>
         </Card.Header>
@@ -70,7 +70,7 @@ const Accordions = () => {
           <Accordion.Toggle as={Card.Header} variant="link" eventKey="1">
             Bacteria, mycoplasma and fungi{" "}
             <span>
-              (excluded at all Generic BioTechnology &reg; health standards)
+              (excluded at all Generic BioTechnology&reg; health standards)
             </span>
           </Accordion.Toggle>
         </Card.Header>
@@ -107,13 +107,13 @@ const Accordions = () => {
           <Accordion.Toggle as={Card.Header} variant="link" eventKey="2">
             Parasites{" "}
             <span>
-              (excluded at all Generic BioTechnology &reg; health standards)
+              (excluded at all Generic BioTechnology&reg; health standards)
             </span>
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="2">
           <Card.Body>
-            Generic BioTechnology &reg; excludes all parasites.
+            Generic BioTechnology&reg; excludes all parasites.
           </Card.Body>
         </Accordion.Collapse>
       </Card>
