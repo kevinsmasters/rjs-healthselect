@@ -34,7 +34,7 @@ const ResultModal = ({ selectedAgents, show, setShow }) => {
               <li key={agent.agent}>{agent.name}</li>
             ))}
           </ul>
-          is excluded from the following Generic BioTechnology &reg; health
+          is excluded from the following Generic BioTechnology&reg; health
           standards:
           <ul>
             {standKey.map((stand) => (

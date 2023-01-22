@@ -52,7 +52,7 @@ const SelectAgent = ({ standards }) => {
 
   return (
     <>
-      <h2>Select Additional Agents</h2>
+      <h2 className="mt-3">Select Additional Agents</h2>
       <p>Are there additional agents on your exclusion list?</p>
       <form action="" id="hst" className={AgentStyles.hstform}>
         <div className="row">
@@ -130,7 +130,11 @@ const SelectAgent = ({ standards }) => {
                   id="agentTxt"
                 />
               </div>
-              <Button variant="primary" onClick={() => setShow(true)}>
+              <Button
+                className="m-1"
+                variant="primary"
+                onClick={() => setShow(true)}
+              >
                 Submit
               </Button>
               <ResultModal
@@ -139,6 +143,7 @@ const SelectAgent = ({ standards }) => {
                 setShow={setShow}
               />
               <Button
+                className="m-1"
                 variant="secondary"
                 onClick={() => {
                   setAgents([]);
