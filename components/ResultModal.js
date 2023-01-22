@@ -34,7 +34,8 @@ const ResultModal = ({ selectedAgents, show, setShow }) => {
               <li key={agent.agent}>{agent.name}</li>
             ))}
           </ul>
-          is excluded from the following Taconic health standards:
+          is excluded from the following Generic BioTechnology &reg; health
+          standards:
           <ul>
             {standKey.map((stand) => (
               <li key={stand}>{stand}</li>
