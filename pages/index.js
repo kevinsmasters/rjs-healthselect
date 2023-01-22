@@ -20,7 +20,7 @@ export default function Home({ standards }) {
               <div className="pt-3 pb-2 mb-3 border-bottom">
                 <p>
                   The below lists of core rodent pathogens are excluded from ALL
-                  Taconic Biosciences health standards:
+                  Generic BioTechnology &reg; health standards:
                 </p>
                 <Accordions />
                 <SelectAgent standards={standards} />
